@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#e69900">
+    <title>Mary's Kitchen</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="p-0">
+    
+    <!-- Top Bar -->
+    <nav class="fixed-top p-0">
+        <div class="row topbar mb-0" id="topbar">
+            <div class="col-8 col-sm-8 col-md-3">
+                <a href="#home" class="h4 font-weight-bold">
+                    Mary's Kitchen
+                </a>
+            </div>
+            <div class="col-4 col-sm-4 d-md-none text-right"> <span class="text-white pr-2 font-weight-bold menu-icon"><i class="fas fa-bars"></i></span></div>
+            <div class="col-6 col-sm-6 col-md-9 d-none d-md-block text-right">
+                <a href="#home" class="btn topbar-link mx-lg-2">Home</a>
+                <a href="#about" class="btn topbar-link mx-lg-2">About</a>
+                <a href="#menu" class="btn topbar-link mx-lg-2">Menu</a>
+                <a href="#placeOrder" class="btn btn btn-lg place-order-btn ml-lg-2 mr-lg-4 text-white border-0" data-toggle="modal" data-target="#placeOrderModal">Place Order</a>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Body Overlay-->
+     <div class="d-md-none" id="bodyoverlay"></div>
+
+    <!-- Mobile Nav -->
+    <div class="bg-white d-md-none text-center" id="mobilenav">
+        <div>
+            <div class="list-group list-group-flush">
+                <a href="#home" class="list-group-item list-group-item-action current-page-nav mobilenav-link h4">Home</a>
+                <a href="#about" class="list-group-item list-group-item-action mobilenav-link h4">About</a>
+                <a href="#menu" class="list-group-item list-group-item-action mobilenav-link h4">Menu</a>
+                <a href="#placeOrder" class="btn btn-lg place-order-btn text-white border-0 px-4 mx-auto mt-4 mobilenav-link font-weight-bold"  data-toggle="modal" data-target="#placeOrderModal">Place Order</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Place order Modal -->
+    <div class="modal fade" id="placeOrderModal" tabindex="-1" role="dialog" aria-labelledby="placeOrderModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-white">
+                    <h5 class="modal-title font-weight-bold" id="placeOrderModal">Order Placement Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="h2 font-weight-bold" style="color: white;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lg text-danger" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-lg place-order-btn text-white border-0"> Place the order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home (header) -->
+    <header class="home" id="home">
+        <div class="container px-4">
+            <div class="text-center text-white">
+                <h1 class="mb-4 font-weight-bold">Nigerian dishes couldn't be more delicious!&#128523;</h1>
+                <a href="#!" class="btn btn-lg place-order-btn place-order-btn-lg text-white border-0 mt-4 shadow-lg font-weight-bold" data-toggle="modal" data-target="#placeOrderModal">Place Order</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="bg-white about-section position-relative" id="about">
+        <svg class="position-absolute first-svg" width="160" height="160">
+            <circle cx="90%" cy="5%" r="80" stroke="#FFB115" stroke-width="40" fill="white"/>
+        </svg>
+        <svg class="position-absolute second-svg" width="280" height="280">
+                <circle cx="75%" cy="50%" r="140" fill="#FFB115"/>
+        </svg>
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="container">
+                <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 p-0 bg-white about-img">
+                    <img src="images/Jollof.jpg" alt="Image of food" class="img-fluid"/>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 order-first order-md-last about-text bg-white shadow-lg">
+                    <h2 class="font-weight-bold">About Us</h2><hr style="border: 2px solid #ffb115; width: 15%;"/>
+                    <p> 
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p> 
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                </div>
+                </div>
+
+                <div class="col-12 col-sm-12 mb-4" id="menu"> <h2 class="font-weight-bold">Popular Dishes</h2><hr style="border: 2px solid #ffb115; width: 15%;"/></div>
+
+                <div class="col-12 col-sm-12 food-cards-row">	
+                <div class="col-11 col-sm-11 col-md-4 mb-4 mb-md-0 food-card">
+                    <div class="card text-center">
+                        <img src="images/Afang-soup-10-1024x683.jpg" alt="Image of food" class="img-fluid"/>
+                        <div class="card-body food-name">
+                            <h2 class="card-title">Afang</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-11 col-md-4 mb-4 mb-md-0 food-card">
+                    <div class="card text-center">
+                        <img src="images/egusiandfufu.jpg" alt="Image of food" class="img-fluid"/>
+                        <div class="card-body food-name">
+                            <h2 class="card-title">Egusi</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-11 col-md-4 mb-4 mb-md-0 food-card">
+                    <div class="card text-center">
+                        <img src="images/Ila-Alasepo-12-1024x656.jpg" alt="Image of food" class="img-fluid"/>
+                        <div class="card-body food-name">
+                            <h2 class="card-title">Okra</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                
+                <div class="col-12 col-sm-12 food-cards-row">
+                <div class="col-11 col-sm-11 col-md-4 mb-4 mb-md-0 food-card">
+                    <div class="card text-center">
+                        <img src="images/jollof-rice.jpg" alt="Image of food" class="img-fluid mb-4"/>
+                        <div class="card-body food-name">
+                            <h2 class="card-title">Fried rice</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-11 col-md-4 mb-4 mb-md-0 food-card">
+                    <div class="card text-center">
+                        <img src="images/jollof-featured-image.jpg" alt="Image of food" class="img-fluid mb-4"/>
+                        <div class="card-body food-name">
+                            <h2 class="card-title">Jollof rice</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-11 col-md-4 mb-4 mb-md-0 food-card">
+                    <div class="card text-center">
+                        <img src="images/ofada-sauce1.jpg " alt="Image of food" class="img-fluid mb-4"/>
+                        <div class="card-body food-name">
+                            <h2 class="card-title">Ofada rice</h2>
+                        </div>
+                    </div>
+                </div>
+				</div>
+
+                <div class="col view-full-menu-btn"><button class="btn btn-lg place-order-btn place-order-btn-lg text-white border-0 shadow-lg font-weight-bold">View Full Menu</button></div>
+                
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Place an order -->
+    <section class="place-order-part text-white">
+        <div class="container">
+                <div class="text-center align-self-center pt-4">
+                    <h3 class="font-weight-bold mb-4">
+                        Need to get the best out of your favourite Nigerian dishes?<br/>
+                        Look no further&#128523;
+                    </h3>
+                    <div><button class="btn btn-lg place-order-btn place-order-btn-lg text-white border-0 m-4 font-weight-bold" data-toggle="modal" data-target="#placeOrderModal">Place Order</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-section position-relative bg-white text-center">
+        <div class="container">
+
+            <svg class="position-absolute third-svg" width="160" height="160">
+                <circle cx="5%" cy="5%" r="80" stroke="#FFB115" stroke-width="40" fill="white"/>
+            </svg>
+            <svg class="position-absolute fourth-svg" width="280" height="280">
+                    <circle cx="75%" cy="50%" r="140" fill="#FFB115"/>
+            </svg>
+            <h2 class="font-weight-bold">Contact Us</h2><hr style="border: 2px solid #ffb115; width: 12%;"/>
+            <div>
+                <p class="mb-3"><i><b>Address: </b>99, Montgomery Road, Ilorin, Kwara State.</i></p>
+                <p class="mb-3"><i><b>Email: </b>info@maryskitchen.com</i></p>
+                <p><i><b>Instagram: </b>@marys_kitchen</i></p>
+                <p class="mb-3"><i><b>Tel: </b>+234 - 567 - 890</i></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="position-relative text-white">
+        <div class="container px-md-3 px-lg-4">
+                <div>
+                    <p>&copy; 2019. Mary's Kitchen. All Rights Reserved</p>
+                </div>
+        </div>
+        <div class="position-absolute go-to-top shadow-lg rounded-circle"><a href="#home" class="text-reset"><span class="font-weight-bolder">&#8679;</span></a></div>
+    </footer>
+
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

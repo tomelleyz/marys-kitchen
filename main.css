@@ -1,0 +1,183 @@
+/* Importing font */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/Montserrat-Regular.ttf");
+    font-weight: normal;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+   background: linear-gradient(to right, #e69900, #ffb115); 
+    font-family: "Montserrat", sans-serif;
+}
+.topbar {
+    background: transparent;
+    padding: 1.5rem 2rem;
+    transition: background 0.3s ease-in;
+}
+#bodyoverlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    display: none; /* initially hidden */
+    z-index: 1031; /* one index greater than .fixed-top class */
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color 0.4s ease-in-out;
+    min-width: 100%;
+    min-height: 100%;
+}
+#mobilenav {
+    position: fixed;
+    top: 0;
+    right: -75%;
+    min-height: 100%;
+    width: 70%;
+    transition: right 0.4s ease-in-out;
+    z-index: 1032; /* one index greater than the #bodyoverlay */
+}
+.menu-icon {
+    font-size: 1.5rem;
+}
+#placeOrderModal .modal-header {
+    background: linear-gradient(to right, #cc8800, #ffb115);
+}
+.home {
+    padding: 45vh 0 40vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/cel-lisboa-Pt_YmiYm7a4-unsplash.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Get Started buttons */
+.place-order-btn {
+    background: linear-gradient(to right, #cc8800, #ffb115);
+    border-radius: .5rem;
+    transition: all .4s ease-in-out;
+}
+.place-order-btn-lg {
+    padding: 1rem 4.5rem;
+}
+.place-order-btn:focus, .place-order-btn:hover {
+    box-shadow: 0 .7rem .7rem rgba(0, 0, 0, 0.3); 
+    background: #383838; 
+}
+.topbar a {
+    color: white;
+}
+.topbar a:hover, .topbar a:focus {
+    color: #FFB115;
+}
+.btn:focus, .btn:active {
+    box-shadow: none;
+}
+.about-img {
+    margin: 160px 0 10px;
+    transform: scale(0.8, 0.8);
+}
+.about-text {
+    margin: 100px 0 10px -90px;
+    padding: 15% 30px;
+}
+svg {
+    opacity: 0.3; /* setting opacity for all svg element */
+}
+.first-svg {
+    right: 0;
+}
+#menu {
+    padding-top: 120px;
+}
+.food-cards-row {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch; /* for smooth horizontal scrolling */
+}
+.food-card {
+	flex: 0 0 auto;
+}
+.card {
+    border: none; /* Removing the borders from the cards */
+    margin-bottom: 3rem;
+}
+.card img:hover {
+    transform: scale(1.1, 1.1);
+    transition: .8s;
+}
+.food-name {
+    transform: rotate(-5deg); 
+    margin-top: -30px; 
+    border-radius: 35px 0 35px 0; 
+    padding: 1rem; 
+    background-color: rgba(255, 177, 21, 0.9); 
+    color: white;
+}
+.view-full-menu-btn {
+    margin: 80px 0 120px;
+}
+.place-order-part {
+    padding: 70px 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/yam_porridge.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.third-svg {
+    left: 0;
+}
+.second-svg {
+    top: 25%;
+    right: 0;
+}
+.fourth-svg {
+    top: 25%;
+    right: 0;
+}
+.contact-section {
+    padding-bottom: 100px;
+}
+.contact-section h2 {
+    padding: 80px 0 0;
+}
+footer {
+    background: linear-gradient(to right, #cc8800, #ffb115); 
+    padding: 40px 0 15px;
+}
+footer .go-to-top {
+    right: 30px;
+    bottom: 80px;
+    padding: 5px 25px;
+    background: white;
+    color: #ffb115 !important;
+    font-size: 3.2rem;
+    transition: .4s;
+}
+footer a {color: #ffb115 !important;}
+footer .go-to-top:hover {
+    background: linear-gradient(to right, #e69900, #ffb115);
+    color: white !important;
+}
+footer a:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
+
+/* media queries */
+@media screen and (max-width: 767.98px) {
+    .about-img {
+        margin-top: 0;
+        transform: scale(1, 1);
+    }
+    .about-text {
+        margin: 120px 0 0 0;
+    }
+}
