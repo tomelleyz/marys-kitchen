@@ -47,7 +47,7 @@ body {
 .home {
     padding: 45vh 0 40vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/cel-lisboa-Pt_YmiYm7a4-unsplash.jpg");
+    url("images/food-hero-image.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -98,9 +98,11 @@ svg {
 	flex-wrap: nowrap;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch; /* for smooth horizontal scrolling */
+	scroll-snap-type: x mandatory; /* for making each child of the container to be locked to the horizontal viewport on scrolling */ 
 }
 .food-card {
 	flex: 0 0 auto;
+	scroll-snap-align: center; /* makes each child to be centered on the viewport on scrolling */
 }
 .card {
     border: none; /* Removing the borders from the cards */
